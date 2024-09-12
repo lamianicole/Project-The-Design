@@ -1,5 +1,138 @@
+/* -------generelles Styling ------  */
+@font-face{
+    font-family: "Roboto-Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+}
+
+@font-face{
+    font-family: "Roboto-Light";
+    src: url("../fonts/Roboto-Light.ttf");
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html{
+    font-size: 10px;
+    max-width: 100%;
+}
+
+/* ------------------    Styling header -----------*/
+header{
+    background-color: white;
+    display: flex;
+    margin-bottom: 10vh;
+}
+
+.starter-logo{
+    width: 5.8em;
+    height: 5em;
+    position: fixed;
+    top: 3.8em;
+    left: 0.3em;
+}
+
+.text-area{
+    margin-top: 40px;
+    margin-left: 60px;
+    width: 35%;
+}
+
+.moving-man{
+    position: absolute;
+    width: 30%;
+    right: 10px;
+    top: -50px;
+}
+
+.starter-left{
+    display: flex;
+    flex-direction: column;
+}
+
+header h4{
+    color: #0B0C17; 
+    font-family: "Roboto-Regular";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 2.88rem;
+}
+
+.author{
+    color: #0B0C17;
+    font-family: "Roboto-Light";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.44rem;
+    margin-bottom: 70%;
+}
+
+h1{
+    color: #0B0C17;
+    font-family: "Roboto-Regular";
+    font-size: 5.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 6.48rem;
+    margin-bottom: 10%;
+}
+
+p{
+    color: #000;
+    font-family: "Roboto-Light";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.with-rocket{
+    margin-bottom: 17%;
+}
+
+.with-rocket:after{
+    content: url("../img/rocket.png");
+    /* width: 10px; */
+    /* height: 10px; */
+}
+
+.scroll-more{
+    color: #FF3571;
+    font-family: "Roboto-Regular";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.starter-right{
+    width: 75%;
+}
+
+.big-img{
+    width: 100%;
+}
+
+/* styling section 2: multi photos*/
+.multi-photo{
+    width: 100vw;
+}
+
+.multi-photo img{
+    width: 100%;
+}
+/*--- section 3:  flexbox--*/
+
+.idea-intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
