@@ -7,7 +7,7 @@
     <title>Project The Design</title>
 </head>
 <body>
-<!-------------------header hat animation, flexbox -------->
+<!-------------------header hat animation(fehlt), flexbox -------->
     <header> 
             <div class="starter-left">
                 <img src="./assets/img/logo.svg" alt="logo" class="starter-logo">
@@ -33,12 +33,12 @@
         </section>
 <!--- section 3:  flexbox ----------------------------------->
 <div class="idea-intro">
-    <div>
-    <h2>Every idea <span>💡</span>starts with a
+    <div class="left-one">
+        <h2>Every idea <span>💡</span><br>starts with a<br>
         need</h2>
     </div>
-    <div>
-    <p>Earlier this year (January 2018). I started to think about how I could improve
+    <div class="right-one">
+        <p>Earlier this year (January 2018). I started to think about how I could improve
         my design skills and attract more customers. I wanted to start designing
         some ideas that for a long time I had only on paper and stored on my cell
         phone, I decided to look for some challenge, something that makes more
@@ -48,48 +48,53 @@
     </div>
 </div>
 
-<h2>After several weeks of sticking to this
+<article>
+    <h2>After several weeks of sticking to this
     challenge, I learned a lot</h2>
+</article>
 
-<!-- ------------hier 1 grid raster bauen-->
+<!-- ------------hier 2x flexbox raster geht auch grid-->
 <div>
-    <div>
-        <img src="" alt="">
+    <div class="con-first-row">
+    <div class="container-left-one">
+        <img src="./assets/img/title02.svg" alt="light bulb icon">
         <h3>Start with asking why</h3>
         <p>You will start seeing things differently and
             coming up with more effective ways of achieving
             goals.</p>
     </div>
 
-    <div>
-        <img src="" alt="">
+    <div class="container-right-one">
+        <img src="./assets/img/title04.svg" alt="tree icon">
         <h3>Your ideas will have more value</h3>
         <p>By looking at problems from a different
             perspective, your ideas will be fresher and more
             valuable.</p>
     </div>
 
-    <div>
-        <img src="" alt="">
+    <div class="con-second-row">
+    <div class="container-left-two">
+        <img src="./assets/img/title01.svg" alt="heart icon">
         <h3>Design solutions with love</h3>
         <p>Only when you experience a problem yourself do
             you understand the frustration of the users and
             resolve to end it.</p>
     </div>
 
-    <div>
-        <img src="" alt="">
+    <div class="container-right-two">
+        <img src="./assets/img/title03.svg" alt="pencil icon">
         <h3>Share and show your work</h3>
         <p>As designers, we are often afraid of showing
             work that’s not finished or doesn’t look perfect.
             You will learn to accept feedback and learn from
             it.</p>
     </div>
+    </div>
 </div>
 
 <!--- section 4-->
 
-<section>
+<section class="section-five">
     <h5>Are you ready? Let’s go!!</h5>
     <p>The challenge lasts 30 days. On each of those days you will have
         to create a solution to any problem you yourself are facing and
@@ -98,8 +103,8 @@
 </section>
 <!----- nächste section---doppler: img und article------------------>
 <section>
-    <div>
-        <div>
+    <div class="double-one">
+        <div class="d-one-pic">
             <img src="./assets/img/step01.png" alt="figure thought bubble">
         </div>
         <div>
@@ -144,20 +149,17 @@
     </div>
 </section>
 
-<!------- section with formular-->
-<section>
-    <article>
+<!---- formular mit button-->
+    <section class="formular">
         <h5>Do you like this challenge?</h5>
-        <p>Subscribe to be the first to hear about updates, tips and
-            recommendations!</p>
-    </article>
-
-    <div>
-        <!---- formular mit button-->
-    </div>
-</section>
-    </main>
-    <!--im formular Platzhalter font arial-->
+        <p>Subscribe to be the first to hear about updates, tips and recommendations!</p>
+        <form class="subscribe-form" action="submit">
+            <input type="email" class="subscribe-input" placeholder="Write your email here" required />
+            <button type="submit" class="subscribe-button">Subscribe</button>
+        </form>
+    </section>    
+</main>
+<!---- footer-->
 <footer>
         <p>Created with Love by a Webdesigner ❤️</p>
 </footer>
